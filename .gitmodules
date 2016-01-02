@@ -1,0 +1,3 @@
+[submodule "p5native.js"]
+	path = p5native.js
+	url = git@github.com:kylestew/p5native.js.git

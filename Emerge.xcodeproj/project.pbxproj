@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		273849401C3885D400CA627E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738493F1C3885D400CA627E /* AppDelegate.swift */; };
-		273849421C3885D400CA627E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273849411C3885D400CA627E /* ViewController.swift */; };
-		273849451C3885D400CA627E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273849431C3885D400CA627E /* Main.storyboard */; };
 		273849471C3885D400CA627E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273849461C3885D400CA627E /* Assets.xcassets */; };
 		2738494A1C3885D400CA627E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273849481C3885D400CA627E /* LaunchScreen.storyboard */; };
 		273849551C3885D400CA627E /* EmergeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273849541C3885D400CA627E /* EmergeTests.swift */; };
 		273849601C3885D400CA627E /* EmergeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738495F1C3885D400CA627E /* EmergeUITests.swift */; };
+		2738496E1C38862000CA627E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2738496D1C38862000CA627E /* Main.storyboard */; };
+		273849731C38868400CA627E /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273849711C38868400CA627E /* SketchViewController.swift */; };
+		273849741C38868400CA627E /* SketchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273849721C38868400CA627E /* SketchesTableViewController.swift */; };
+		273849771C38874400CA627E /* basic_rect.js in Resources */ = {isa = PBXBuildFile; fileRef = 273849761C38874400CA627E /* basic_rect.js */; };
+		273849931C388C7900CA627E /* p5native.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273849901C388C7200CA627E /* p5native.framework */; };
+		273849941C388C7900CA627E /* p5native.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273849901C388C7200CA627E /* p5native.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,46 @@
 			remoteGlobalIDString = 2738493B1C3885D400CA627E;
 			remoteInfo = Emerge;
 		};
+		2738498F1C388C7200CA627E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2738498A1C388C7200CA627E /* p5native.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2790F5921C3646E4007218F4;
+			remoteInfo = p5native;
+		};
+		273849911C388C7200CA627E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2738498A1C388C7200CA627E /* p5native.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2790F59C1C3646E5007218F4;
+			remoteInfo = p5nativeTests;
+		};
+		273849951C388C7900CA627E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2738498A1C388C7200CA627E /* p5native.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2790F5911C3646E4007218F4;
+			remoteInfo = p5native;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		273849971C388C7900CA627E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				273849941C388C7900CA627E /* p5native.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2738493C1C3885D400CA627E /* Emerge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emerge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2738493F1C3885D400CA627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		273849411C3885D400CA627E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		273849441C3885D400CA627E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		273849461C3885D400CA627E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		273849491C3885D400CA627E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2738494B1C3885D400CA627E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +84,11 @@
 		2738495B1C3885D400CA627E /* EmergeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmergeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2738495F1C3885D400CA627E /* EmergeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergeUITests.swift; sourceTree = "<group>"; };
 		273849611C3885D400CA627E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2738496D1C38862000CA627E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		273849711C38868400CA627E /* SketchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
+		273849721C38868400CA627E /* SketchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchesTableViewController.swift; sourceTree = "<group>"; };
+		273849761C38874400CA627E /* basic_rect.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = basic_rect.js; sourceTree = "<group>"; };
+		2738498A1C388C7200CA627E /* p5native.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = p5native.xcodeproj; path = p5native.js/p5native.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273849931C388C7900CA627E /* p5native.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,11 +140,15 @@
 		2738493E1C3885D400CA627E /* Emerge */ = {
 			isa = PBXGroup;
 			children = (
+				2738498A1C388C7200CA627E /* p5native.xcodeproj */,
+				273849701C38866900CA627E /* Sketches */,
+				2738496F1C38863F00CA627E /* Inputs */,
+				273849711C38868400CA627E /* SketchViewController.swift */,
+				273849721C38868400CA627E /* SketchesTableViewController.swift */,
 				2738493F1C3885D400CA627E /* AppDelegate.swift */,
-				273849411C3885D400CA627E /* ViewController.swift */,
-				273849431C3885D400CA627E /* Main.storyboard */,
-				273849461C3885D400CA627E /* Assets.xcassets */,
+				2738496D1C38862000CA627E /* Main.storyboard */,
 				273849481C3885D400CA627E /* LaunchScreen.storyboard */,
+				273849461C3885D400CA627E /* Assets.xcassets */,
 				2738494B1C3885D400CA627E /* Info.plist */,
 			);
 			path = Emerge;
@@ -125,6 +172,32 @@
 			path = EmergeUITests;
 			sourceTree = "<group>";
 		};
+		2738496F1C38863F00CA627E /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Inputs;
+			path = Emerge/Inputs;
+			sourceTree = SOURCE_ROOT;
+		};
+		273849701C38866900CA627E /* Sketches */ = {
+			isa = PBXGroup;
+			children = (
+				273849761C38874400CA627E /* basic_rect.js */,
+			);
+			name = Sketches;
+			path = Emerge/Sketches;
+			sourceTree = SOURCE_ROOT;
+		};
+		2738498B1C388C7200CA627E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				273849901C388C7200CA627E /* p5native.framework */,
+				273849921C388C7200CA627E /* p5nativeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +208,12 @@
 				273849381C3885D400CA627E /* Sources */,
 				273849391C3885D400CA627E /* Frameworks */,
 				2738493A1C3885D400CA627E /* Resources */,
+				273849971C388C7900CA627E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				273849961C388C7900CA627E /* PBXTargetDependency */,
 			);
 			name = Emerge;
 			productName = Emerge;
@@ -215,6 +290,12 @@
 			mainGroup = 273849331C3885D400CA627E;
 			productRefGroup = 2738493D1C3885D400CA627E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2738498B1C388C7200CA627E /* Products */;
+					ProjectRef = 2738498A1C388C7200CA627E /* p5native.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2738493B1C3885D400CA627E /* Emerge */,
@@ -224,14 +305,32 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		273849901C388C7200CA627E /* p5native.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = p5native.framework;
+			remoteRef = 2738498F1C388C7200CA627E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		273849921C388C7200CA627E /* p5nativeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = p5nativeTests.xctest;
+			remoteRef = 273849911C388C7200CA627E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		2738493A1C3885D400CA627E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2738496E1C38862000CA627E /* Main.storyboard in Resources */,
 				2738494A1C3885D400CA627E /* LaunchScreen.storyboard in Resources */,
 				273849471C3885D400CA627E /* Assets.xcassets in Resources */,
-				273849451C3885D400CA627E /* Main.storyboard in Resources */,
+				273849771C38874400CA627E /* basic_rect.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +355,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273849421C3885D400CA627E /* ViewController.swift in Sources */,
+				273849741C38868400CA627E /* SketchesTableViewController.swift in Sources */,
+				273849731C38868400CA627E /* SketchViewController.swift in Sources */,
 				273849401C3885D400CA627E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,17 +390,14 @@
 			target = 2738493B1C3885D400CA627E /* Emerge */;
 			targetProxy = 2738495C1C3885D400CA627E /* PBXContainerItemProxy */;
 		};
+		273849961C388C7900CA627E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = p5native;
+			targetProxy = 273849951C388C7900CA627E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		273849431C3885D400CA627E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				273849441C3885D400CA627E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		273849481C3885D400CA627E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -399,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Emerge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.kylestewart.Emerge;
@@ -410,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Emerge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.kylestewart.Emerge;
