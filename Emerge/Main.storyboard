@@ -182,7 +182,7 @@
                                                                 </mask>
                                                             </variation>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEPPER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzE-9s-Oyd">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLIDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzE-9s-Oyd">
                                                             <rect key="frame" x="0.0" y="218" width="80" height="30"/>
                                                             <color key="backgroundColor" red="0.21173727512359619" green="0.21178042888641357" blue="0.2117345929145813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
@@ -656,11 +656,17 @@
                             <constraint firstItem="GJT-lS-ZRw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1WV-Ke-Kvu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xan-mz-SaQ" secondAttribute="bottom" id="DNT-hb-jOe"/>
                             <constraint firstItem="Xan-mz-SaQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ELy-cF-dXh"/>
+                            <constraint firstItem="Xan-mz-SaQ" firstAttribute="top" secondItem="GJT-lS-ZRw" secondAttribute="bottom" id="HVV-Kj-vPk"/>
                             <constraint firstAttribute="trailing" secondItem="GJT-lS-ZRw" secondAttribute="trailing" id="Icc-Hs-BKI"/>
                             <constraint firstItem="GJT-lS-ZRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VjJ-Rp-IFx"/>
                             <constraint firstItem="Xan-mz-SaQ" firstAttribute="top" secondItem="GJT-lS-ZRw" secondAttribute="bottom" id="YLU-Sh-usf"/>
                             <constraint firstAttribute="trailing" secondItem="Xan-mz-SaQ" secondAttribute="trailing" id="aoX-Z8-ZPk"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YLU-Sh-usf"/>
+                            </mask>
+                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedStatusBarMetrics"/>

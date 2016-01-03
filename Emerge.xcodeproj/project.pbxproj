@@ -18,6 +18,8 @@
 		273849771C38874400CA627E /* basic_rect.js in Resources */ = {isa = PBXBuildFile; fileRef = 273849761C38874400CA627E /* basic_rect.js */; };
 		273849931C388C7900CA627E /* p5native.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273849901C388C7200CA627E /* p5native.framework */; };
 		273849941C388C7900CA627E /* p5native.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273849901C388C7200CA627E /* p5native.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2738499A1C3897AC00CA627E /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273849991C3897AC00CA627E /* Binding.swift */; };
+		2738499C1C389F9C00CA627E /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738499B1C389F9C00CA627E /* Slider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		273849721C38868400CA627E /* SketchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchesTableViewController.swift; sourceTree = "<group>"; };
 		273849761C38874400CA627E /* basic_rect.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = basic_rect.js; sourceTree = "<group>"; };
 		2738498A1C388C7200CA627E /* p5native.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = p5native.xcodeproj; path = p5native.js/p5native.xcodeproj; sourceTree = SOURCE_ROOT; };
+		273849991C3897AC00CA627E /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		2738499B1C389F9C00CA627E /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +146,7 @@
 			children = (
 				2738498A1C388C7200CA627E /* p5native.xcodeproj */,
 				273849701C38866900CA627E /* Sketches */,
-				2738496F1C38863F00CA627E /* Inputs */,
+				273849981C38978100CA627E /* Binding */,
 				273849711C38868400CA627E /* SketchViewController.swift */,
 				273849721C38868400CA627E /* SketchesTableViewController.swift */,
 				2738493F1C3885D400CA627E /* AppDelegate.swift */,
@@ -172,14 +176,6 @@
 			path = EmergeUITests;
 			sourceTree = "<group>";
 		};
-		2738496F1C38863F00CA627E /* Inputs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Inputs;
-			path = Emerge/Inputs;
-			sourceTree = SOURCE_ROOT;
-		};
 		273849701C38866900CA627E /* Sketches */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +193,16 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		273849981C38978100CA627E /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				273849991C3897AC00CA627E /* Binding.swift */,
+				2738499B1C389F9C00CA627E /* Slider.swift */,
+			);
+			name = Binding;
+			path = Emerge/Binding;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -358,6 +364,8 @@
 				273849741C38868400CA627E /* SketchesTableViewController.swift in Sources */,
 				273849731C38868400CA627E /* SketchViewController.swift in Sources */,
 				273849401C3885D400CA627E /* AppDelegate.swift in Sources */,
+				2738499A1C3897AC00CA627E /* Binding.swift in Sources */,
+				2738499C1C389F9C00CA627E /* Slider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

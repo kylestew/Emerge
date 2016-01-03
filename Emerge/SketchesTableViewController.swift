@@ -24,7 +24,7 @@ class SketchesTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         // TEMP: TODO: autoroute
-//        selectModule(sketches[0])
+        selectSketch(sketches[0])
     }
     
     override func prefersStatusBarHidden() -> Bool {

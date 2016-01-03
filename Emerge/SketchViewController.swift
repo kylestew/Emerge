@@ -1,14 +1,15 @@
 import UIKit
 import p5native
 
-class SketchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class SketchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, p5PropsDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     var p5Controller:p5ViewController?
     
     var sketch:String?
-//    var inputs:[Input] = []
+    var bindings:[String:Binding] = [:]
+    var inputs:[Binding] = []
     
     class func createWithSketch(sketch: String) -> SketchViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("sketch_view") as! SketchViewController
@@ -32,10 +33,8 @@ class SketchViewController: UIViewController, UICollectionViewDataSource, UIColl
             if let filepath = NSBundle.mainBundle().pathForResource(sketch, ofType: "js") {
                 do {
                     let jsCode = try! String(contentsOfFile: filepath, encoding: NSUTF8StringEncoding)
+                    controller.propsDelegate = self
                     controller.loadp5Script(jsCode)
-                    
-//                    performUIWiring(controller)
-                    
                     return // success
                 }
             }
@@ -50,27 +49,32 @@ class SketchViewController: UIViewController, UICollectionViewDataSource, UIColl
         p5Controller = segue.destinationViewController as? p5ViewController
     }
     
+    // MARK: Prop Bindings
+    func p5PropBound(binding: NSDictionary) {
+        // parse binding dictionary into bound Binding objects
+        if let type = binding["type"] as? String {
+            
+            switch type {
+            case "slider":
+                if let key = binding["key"] as? String, value = binding["value"] as? Double, title = binding["title"] as? String {
+                    let bound = Slider(key: key, value: value, title: title)
+                    bindings[key] = bound
+                    inputs.append(bound)
+                }
+            default: ()
+            }
+            
+        }
+        collectionView.reloadData()
+    }
     
+    func p5PropUpdated(key: String, value: AnyObject) {
+        bindings[key]?.setValue(value)
+    }
     
-    
-    
-
-//    // MARK: Wiring
-//    func performWiring(mod: Module) {
-//        // expose inputs for UI
-//        inputs = mod.mapInputs()
-//        
-//        // start!
-//        canvasView.module = mod
-//        mod.touchableSurface = canvasView
-//        canvasView.run()
-//        collectionView.reloadData()
-//    }
-//    
-//    // MARK: CollectionView DataSource
+    // MARK: CollectionView DataSource
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
-//        return inputs.count
+        return inputs.count
     }
 
 //    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -79,17 +83,15 @@ class SketchViewController: UIViewController, UICollectionViewDataSource, UIColl
 //    }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-//        let input = inputs[indexPath.item]
-//        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(input.displayCell.identifier, forIndexPath: indexPath)
-//        // give cell persistent copy of input
-//        if var displayCell = cell as? InputDisplayCell {
-//            displayCell.input = input
+        let input = inputs[indexPath.item]
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(input.displayCell.identifier, forIndexPath: indexPath)
+        // give cell persistent copy of input
+        if var displayCell = cell as? InputDisplayCell {
+            displayCell.binding = input
 //            if var extendedUI = displayCell as? InputExtendedUI {
 //                extendedUI.parentViewController = self
 //            }
-//        }
-        
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
+        }
         return cell
     }
     

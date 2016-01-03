@@ -1,34 +1,44 @@
-var props = {
-    scale: 0.75,
-    hello: "world"
-}
 
 function setup() {
     createCanvas(640, 640);
     
     // pass initial prop values to iOS
-    window.webkit.messageHandlers.props.postMessage(props)
-    
-    // TODO: abstract out of code?
-//    registerProps(props);
+    registerProp({
+                 type: "slider",
+                 key: "scale",
+                 title: "Scale",
+                 value: 0.25,
+                 minValue: 0,
+                 maxValue: 1
+    });
 }
+
+
 
 // TODO: abstract into library
-function setProp(key, value) {
+// USER can register almost anything here - needs key/value
+var props = {};
+function registerProp(prop) {
+    props[prop.key] = prop.value;
+    window.webkit.messageHandlers.propRegistration.postMessage(prop);
+}
+// iOS -> p5.js
+function receivePropUpdate(key, value) {
     props[key] = value
 }
-
-function postProp(key, value) {
+// p5.js -> iOS
+function postPropUpdate(key, value) {
+    // TODO: update local copy?
     var msg = {};
     msg[key] = value
     window.webkit.messageHandlers.props.postMessage(msg);
 }
+
+
 
 function draw() {
     background(127);
     noStroke();
     
     rect(0, 0, props.scale*width, props.scale*height);
-    
-    postProp("frameCount", frameCount);
 }

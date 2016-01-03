@@ -2,4 +2,85 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "p5native.js/p5native/p5ViewController.swift"
+            timestampString = "473475215.734653"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "userContentController(_:didReceiveScriptMessage:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Emerge/Binding/Slider.swift"
+            timestampString = "473476125.271898"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "setValue(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Emerge.SliderCell.__deallocating_deinit"
+                  moduleName = "Emerge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyle/Projects/Emerge/Emerge/Binding/Slider.swift"
+                  timestampString = "473476125.275832"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Emerge.SliderCell.init (Emerge.SliderCell.Type)(frame : __C.CGRect) -&gt; Emerge.SliderCell"
+                  moduleName = "Emerge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyle/Projects/Emerge/Emerge/Binding/Slider.swift"
+                  timestampString = "473476125.276201"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Emerge.SliderCell.init (Emerge.SliderCell.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Emerge.SliderCell&gt;"
+                  moduleName = "Emerge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyle/Projects/Emerge/Emerge/Binding/Slider.swift"
+                  timestampString = "473476125.276384"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
