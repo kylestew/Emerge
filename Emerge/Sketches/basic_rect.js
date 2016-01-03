@@ -1,19 +1,4 @@
 
-function setup() {
-    createCanvas(640, 640);
-    
-    // pass initial prop values to iOS
-    registerProp({
-                 type: "slider",
-                 key: "scale",
-                 title: "Scale",
-                 value: 0.25,
-                 minValue: 0,
-                 maxValue: 1
-    });
-}
-
-
 
 // TODO: abstract into library
 // USER can register almost anything here - needs key/value
@@ -35,6 +20,22 @@ function postPropUpdate(key, value) {
 }
 
 
+
+
+
+function setup() {
+    createCanvas(640, 640);
+    
+    // pass initial prop values to iOS
+    registerProp({
+                 type: "slider",
+                 key: "scale",
+                 title: "Scale",
+                 value: 0.25,
+                 minValue: 0,
+                 maxValue: 1
+    });
+}
 
 function draw() {
     background(127);

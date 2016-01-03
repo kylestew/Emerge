@@ -6,7 +6,8 @@ class SketchesTableViewController: UITableViewController {
     
     required init?(coder aDecoder: NSCoder) {
         sketches = [
-            "basic_rect"
+            "basic_rect",
+            "structure_recursion",
         ]
         
         super.init(coder: aDecoder)
@@ -24,7 +25,7 @@ class SketchesTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         // TEMP: TODO: autoroute
-        selectSketch(sketches[0])
+//        selectSketch(sketches[1])
     }
     
     override func prefersStatusBarHidden() -> Bool {

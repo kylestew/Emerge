@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271C59E91C38B2AC00CC6956 /* structure_recursion.js in Resources */ = {isa = PBXBuildFile; fileRef = 271C59E81C38B2AC00CC6956 /* structure_recursion.js */; };
 		273849401C3885D400CA627E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738493F1C3885D400CA627E /* AppDelegate.swift */; };
 		273849471C3885D400CA627E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273849461C3885D400CA627E /* Assets.xcassets */; };
 		2738494A1C3885D400CA627E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273849481C3885D400CA627E /* LaunchScreen.storyboard */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		00CB19B54A9E7765D60C4A60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		271C59E81C38B2AC00CC6956 /* structure_recursion.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = structure_recursion.js; sourceTree = "<group>"; };
 		2738493C1C3885D400CA627E /* Emerge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emerge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2738493F1C3885D400CA627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		273849461C3885D400CA627E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		273849701C38866900CA627E /* Sketches */ = {
 			isa = PBXGroup;
 			children = (
+				271C59E81C38B2AC00CC6956 /* structure_recursion.js */,
 				273849761C38874400CA627E /* basic_rect.js */,
 			);
 			name = Sketches;
@@ -363,6 +366,7 @@
 				2738496E1C38862000CA627E /* Main.storyboard in Resources */,
 				2738494A1C3885D400CA627E /* LaunchScreen.storyboard in Resources */,
 				273849471C3885D400CA627E /* Assets.xcassets in Resources */,
+				271C59E91C38B2AC00CC6956 /* structure_recursion.js in Resources */,
 				273849771C38874400CA627E /* basic_rect.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
