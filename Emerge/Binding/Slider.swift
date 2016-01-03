@@ -1,22 +1,34 @@
 import UIKit
-//import ReactiveCocoa
+import ReactiveCocoa
+import p5native
 
 struct Slider: Binding {
     let displayCell:InputDisplayCell.Type = SliderCell.self
     
     var key:String
+    var value:MutableProperty<Double>
     var title = "slider"
     var minValue:Double
     var maxValue:Double
     
-    var value = MutableProperty<Double>(0.0)
-    func setValue(value: AnyObject) {
-        // TODO: conditionally unwrap value
-        print(value)
+    static func create(binding: NSDictionary, controller: p5ViewController) -> Slider? {
+        if let key = binding["key"] as? String, value = binding["value"] as? Double, title = binding["title"] as? String, minValue = binding["minValue"] as? Double, maxValue = binding["maxValue"] as? Double {
+            
+            let bound = Slider(key: key, value: MutableProperty<Double>(value), title: title, minValue: minValue, maxValue: maxValue)
+            bound.value.producer.startWithNext { newValue in
+                controller.setProp(key, value: newValue)
+            }
+            
+            return bound
+        }
+        return nil
     }
     
-    
-    // func postValue() { controller.postValue }
+    func setValue(value: AnyObject) {
+        if let val = value as? Double {
+            self.value.value = val
+        }
+    }
 }
 
 class SliderCell: UICollectionViewCell, InputDisplayCell, UIGestureRecognizerDelegate {
@@ -47,13 +59,13 @@ class SliderCell: UICollectionViewCell, InputDisplayCell, UIGestureRecognizerDel
     
     var slider:Slider? {
         didSet {
-//                if let slide = self.slider {
-//            slider?.wireTo.producer.startWithNext({ newValue -> () in
-//                    let percent = CGFloat((newValue - slide.minValue) / (slide.maxValue - slide.minValue))
-//                    let tH = self.trackView.frame.size.height - self.thumbView.frame.size.height
-//                    self.thumbHeightReversedConstraint.constant = -tH * percent // is reversed
-//                }
-//            })
+            slider?.value.producer.startWithNext({ newValue -> () in
+                if let slide = self.slider {
+                    let percent = CGFloat((newValue - slide.minValue) / (slide.maxValue - slide.minValue))
+                    let tH = self.trackView.frame.size.height - self.thumbView.frame.size.height
+                    self.thumbHeightReversedConstraint.constant = -tH * percent // is reversed
+                }
+            })
         }
     }
     
@@ -78,7 +90,7 @@ class SliderCell: UICollectionViewCell, InputDisplayCell, UIGestureRecognizerDel
         // set value change by percentage
         if let slide = slider {
             let delta = (slide.maxValue - slide.minValue) * Double(percentage)
-            var newVal = slide.wireTo.value + delta
+            var newVal = slide.value.value + delta
             newVal = min(newVal, slide.maxValue)
             newVal = max(newVal, slide.minValue)
             slide.value.value = newVal

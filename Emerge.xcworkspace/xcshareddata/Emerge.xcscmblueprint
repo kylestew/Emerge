@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D46459CFD635E0300312770F74CD9BEA196F6378",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "721EB5126D5C098B5DE6695B6D02CA99B25B2A22" : 0,
+    "D46459CFD635E0300312770F74CD9BEA196F6378" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E463A7F0-2016-42DD-BD70-23914582B1DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "721EB5126D5C098B5DE6695B6D02CA99B25B2A22" : "Emerge\/p5native.js\/",
+    "D46459CFD635E0300312770F74CD9BEA196F6378" : "Emerge\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Emerge",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Emerge.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:kylestew\/p5native.js.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "721EB5126D5C098B5DE6695B6D02CA99B25B2A22"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:kylestew\/Emerge.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D46459CFD635E0300312770F74CD9BEA196F6378"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module Pods_Emerge {
+  umbrella header "Pods-Emerge-umbrella.h"
+
+  export *
+  module * { export * }
+}

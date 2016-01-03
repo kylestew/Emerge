@@ -1,4 +1,5 @@
 import UIKit
+import ReactiveCocoa
 import p5native
 
 class SketchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, p5PropsDelegate {
@@ -52,13 +53,12 @@ class SketchViewController: UIViewController, UICollectionViewDataSource, UIColl
     // MARK: Prop Bindings
     func p5PropBound(binding: NSDictionary) {
         // parse binding dictionary into bound Binding objects
-        if let type = binding["type"] as? String {
+        if let controller = p5Controller, let type = binding["type"] as? String {
             
             switch type {
             case "slider":
-                if let key = binding["key"] as? String, value = binding["value"] as? Double, title = binding["title"] as? String {
-                    let bound = Slider(key: key, value: value, title: title)
-                    bindings[key] = bound
+                if let bound = Slider.create(binding, controller: controller) {
+                    bindings[bound.key] = bound
                     inputs.append(bound)
                 }
             default: ()
@@ -77,10 +77,10 @@ class SketchViewController: UIViewController, UICollectionViewDataSource, UIColl
         return inputs.count
     }
 
-//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-//        let displayCell = inputs[indexPath.item].displayCell
-//        return CGSizeMake(displayCell.cellWidth, self.collectionView.bounds.size.height)
-//    }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let displayCell = inputs[indexPath.item].displayCell
+        return CGSizeMake(displayCell.cellWidth, self.collectionView.bounds.size.height)
+    }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let input = inputs[indexPath.item]
