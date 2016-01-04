@@ -8,6 +8,13 @@ class SketchesTableViewController: UITableViewController {
         sketches = [
             "basic_rect",
             "structure_recursion",
+            "simulation_game_of_life",
+            "3d_sine_cosine_in_3d",
+//            "3d_orbit_control",
+//            "3d_textures",
+            "sound_oscillator_frequency",
+            "math_additive_wave",
+//            "sound_mic_input",
         ]
         
         super.init(coder: aDecoder)
@@ -25,7 +32,7 @@ class SketchesTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         // TEMP: TODO: autoroute
-//        selectSketch(sketches[1])
+//        selectSketch(sketches[3])
     }
     
     override func prefersStatusBarHidden() -> Bool {
