@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		271C59E91C38B2AC00CC6956 /* structure_recursion.js in Resources */ = {isa = PBXBuildFile; fileRef = 271C59E81C38B2AC00CC6956 /* structure_recursion.js */; };
+		273586521C39F4BF0049DA57 /* CYRLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2735864B1C39F4BF0049DA57 /* CYRLayoutManager.m */; };
+		273586531C39F4BF0049DA57 /* CYRTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2735864D1C39F4BF0049DA57 /* CYRTextStorage.m */; };
+		273586541C39F4BF0049DA57 /* CYRTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2735864F1C39F4BF0049DA57 /* CYRTextView.m */; };
+		273586551C39F4BF0049DA57 /* CYRToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 273586511C39F4BF0049DA57 /* CYRToken.m */; };
+		273586581C39F5170049DA57 /* QEDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 273586571C39F5170049DA57 /* QEDTextView.m */; };
 		273849401C3885D400CA627E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738493F1C3885D400CA627E /* AppDelegate.swift */; };
 		273849471C3885D400CA627E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273849461C3885D400CA627E /* Assets.xcassets */; };
 		2738494A1C3885D400CA627E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273849481C3885D400CA627E /* LaunchScreen.storyboard */; };
@@ -21,6 +26,7 @@
 		273849941C388C7900CA627E /* p5native.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273849901C388C7200CA627E /* p5native.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2738499A1C3897AC00CA627E /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273849991C3897AC00CA627E /* Binding.swift */; };
 		2738499C1C389F9C00CA627E /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738499B1C389F9C00CA627E /* Slider.swift */; };
+		27A3272F1C39EF4600798110 /* CodeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */; };
 		27CA81211C39ADD900028C5D /* simulation_game_of_life.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */; };
 		27CA81231C39AE6800028C5D /* 3d_sine_cosine_in_3d.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */; };
 		27CA81251C39AF0600028C5D /* 3d_orbit_control.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA81241C39AF0600028C5D /* 3d_orbit_control.js */; };
@@ -86,6 +92,17 @@
 /* Begin PBXFileReference section */
 		00CB19B54A9E7765D60C4A60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		271C59E81C38B2AC00CC6956 /* structure_recursion.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = structure_recursion.js; sourceTree = "<group>"; };
+		273586491C39F4BF0049DA57 /* Emerge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Emerge-Bridging-Header.h"; sourceTree = "<group>"; };
+		2735864A1C39F4BF0049DA57 /* CYRLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRLayoutManager.h; sourceTree = "<group>"; };
+		2735864B1C39F4BF0049DA57 /* CYRLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRLayoutManager.m; sourceTree = "<group>"; };
+		2735864C1C39F4BF0049DA57 /* CYRTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextStorage.h; sourceTree = "<group>"; };
+		2735864D1C39F4BF0049DA57 /* CYRTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextStorage.m; sourceTree = "<group>"; };
+		2735864E1C39F4BF0049DA57 /* CYRTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextView.h; sourceTree = "<group>"; };
+		2735864F1C39F4BF0049DA57 /* CYRTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextView.m; sourceTree = "<group>"; };
+		273586501C39F4BF0049DA57 /* CYRToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRToken.h; sourceTree = "<group>"; };
+		273586511C39F4BF0049DA57 /* CYRToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRToken.m; sourceTree = "<group>"; };
+		273586561C39F5170049DA57 /* QEDTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QEDTextView.h; sourceTree = "<group>"; };
+		273586571C39F5170049DA57 /* QEDTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QEDTextView.m; sourceTree = "<group>"; };
 		2738493C1C3885D400CA627E /* Emerge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emerge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2738493F1C3885D400CA627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		273849461C3885D400CA627E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +121,7 @@
 		2738498A1C388C7200CA627E /* p5native.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = p5native.xcodeproj; path = p5native.js/p5native.xcodeproj; sourceTree = SOURCE_ROOT; };
 		273849991C3897AC00CA627E /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		2738499B1C389F9C00CA627E /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeEditorViewController.swift; sourceTree = "<group>"; };
 		27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = simulation_game_of_life.js; sourceTree = "<group>"; };
 		27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 3d_sine_cosine_in_3d.js; sourceTree = "<group>"; };
 		27CA81241C39AF0600028C5D /* 3d_orbit_control.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 3d_orbit_control.js; sourceTree = "<group>"; };
@@ -142,6 +160,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		273586461C39F4610049DA57 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				273586481C39F4920049DA57 /* CYRTextView */,
+			);
+			name = Libraries;
+			path = Emerge/Libraries;
+			sourceTree = SOURCE_ROOT;
+		};
+		273586481C39F4920049DA57 /* CYRTextView */ = {
+			isa = PBXGroup;
+			children = (
+				273586561C39F5170049DA57 /* QEDTextView.h */,
+				273586571C39F5170049DA57 /* QEDTextView.m */,
+				2735864A1C39F4BF0049DA57 /* CYRLayoutManager.h */,
+				2735864B1C39F4BF0049DA57 /* CYRLayoutManager.m */,
+				2735864C1C39F4BF0049DA57 /* CYRTextStorage.h */,
+				2735864D1C39F4BF0049DA57 /* CYRTextStorage.m */,
+				2735864E1C39F4BF0049DA57 /* CYRTextView.h */,
+				2735864F1C39F4BF0049DA57 /* CYRTextView.m */,
+				273586501C39F4BF0049DA57 /* CYRToken.h */,
+				273586511C39F4BF0049DA57 /* CYRToken.m */,
+				273586491C39F4BF0049DA57 /* Emerge-Bridging-Header.h */,
+			);
+			name = CYRTextView;
+			path = Emerge/Libraries/CYRTextView;
+			sourceTree = SOURCE_ROOT;
+		};
 		273849331C3885D400CA627E = {
 			isa = PBXGroup;
 			children = (
@@ -170,10 +216,12 @@
 				2738498A1C388C7200CA627E /* p5native.xcodeproj */,
 				273849701C38866900CA627E /* Sketches */,
 				273849981C38978100CA627E /* Binding */,
+				27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */,
 				273849711C38868400CA627E /* SketchViewController.swift */,
 				273849721C38868400CA627E /* SketchesTableViewController.swift */,
 				2738493F1C3885D400CA627E /* AppDelegate.swift */,
 				2738496D1C38862000CA627E /* Main.storyboard */,
+				273586461C39F4610049DA57 /* Libraries */,
 				273849481C3885D400CA627E /* LaunchScreen.storyboard */,
 				273849461C3885D400CA627E /* Assets.xcassets */,
 				2738494B1C3885D400CA627E /* Info.plist */,
@@ -468,10 +516,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273586551C39F4BF0049DA57 /* CYRToken.m in Sources */,
 				273849741C38868400CA627E /* SketchesTableViewController.swift in Sources */,
 				273849731C38868400CA627E /* SketchViewController.swift in Sources */,
 				273849401C3885D400CA627E /* AppDelegate.swift in Sources */,
+				273586531C39F4BF0049DA57 /* CYRTextStorage.m in Sources */,
+				273586521C39F4BF0049DA57 /* CYRLayoutManager.m in Sources */,
+				273586581C39F5170049DA57 /* QEDTextView.m in Sources */,
+				273586541C39F4BF0049DA57 /* CYRTextView.m in Sources */,
 				2738499A1C3897AC00CA627E /* Binding.swift in Sources */,
+				27A3272F1C39EF4600798110 /* CodeEditorViewController.swift in Sources */,
 				2738499C1C389F9C00CA627E /* Slider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,11 +666,14 @@
 			baseConfigurationReference = 00CB19B54A9E7765D60C4A60 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Emerge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.kylestewart.Emerge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Emerge/Libraries/CYRTextView/Emerge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -625,11 +682,13 @@
 			baseConfigurationReference = E28C152D75049D8DB3CD3F0C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Emerge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.kylestewart.Emerge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Emerge/Libraries/CYRTextView/Emerge-Bridging-Header.h";
 			};
 			name = Release;
 		};
