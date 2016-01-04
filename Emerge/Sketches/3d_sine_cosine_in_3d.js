@@ -1,7 +1,7 @@
 // http://p5js.org/examples/examples/3D_Sine_Cosine_in_3D.php
 
 function setup(){
-    createCanvas(1000, 1000, WEBGL);
+    createCanvas(375, 375, WEBGL);
 }
 
 function draw(){

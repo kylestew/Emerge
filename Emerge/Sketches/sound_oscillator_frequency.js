@@ -3,7 +3,7 @@
 var osc, fft;
 
 function setup() {
-    createCanvas(720, 256);
+    createCanvas(375, 375);
     
     osc = new p5.TriOsc(); // set frequency and type
     osc.amp(.5);

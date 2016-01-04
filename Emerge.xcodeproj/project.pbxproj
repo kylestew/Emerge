@@ -26,6 +26,7 @@
 		273849941C388C7900CA627E /* p5native.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273849901C388C7200CA627E /* p5native.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2738499A1C3897AC00CA627E /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273849991C3897AC00CA627E /* Binding.swift */; };
 		2738499C1C389F9C00CA627E /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738499B1C389F9C00CA627E /* Slider.swift */; };
+		273C834B1C39FAFC00171660 /* triangle_strip.js in Resources */ = {isa = PBXBuildFile; fileRef = 273C834A1C39FAFC00171660 /* triangle_strip.js */; };
 		27A3272F1C39EF4600798110 /* CodeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */; };
 		27CA81211C39ADD900028C5D /* simulation_game_of_life.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */; };
 		27CA81231C39AE6800028C5D /* 3d_sine_cosine_in_3d.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */; };
@@ -121,6 +122,7 @@
 		2738498A1C388C7200CA627E /* p5native.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = p5native.xcodeproj; path = p5native.js/p5native.xcodeproj; sourceTree = SOURCE_ROOT; };
 		273849991C3897AC00CA627E /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		2738499B1C389F9C00CA627E /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		273C834A1C39FAFC00171660 /* triangle_strip.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = triangle_strip.js; sourceTree = "<group>"; };
 		27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeEditorViewController.swift; sourceTree = "<group>"; };
 		27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = simulation_game_of_life.js; sourceTree = "<group>"; };
 		27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 3d_sine_cosine_in_3d.js; sourceTree = "<group>"; };
@@ -253,12 +255,13 @@
 				271C59E81C38B2AC00CC6956 /* structure_recursion.js */,
 				273849761C38874400CA627E /* basic_rect.js */,
 				27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */,
+				27CA812C1C39B56800028C5D /* math_additive_wave.js */,
+				273C834A1C39FAFC00171660 /* triangle_strip.js */,
 				27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */,
 				27CA81241C39AF0600028C5D /* 3d_orbit_control.js */,
 				27CA81261C39B05000028C5D /* 3d_textures.js */,
-				27CA81281C39B38D00028C5D /* sound_oscillator_frequency.js */,
-				27CA812C1C39B56800028C5D /* math_additive_wave.js */,
 				27CA812E1C39B7E000028C5D /* sound_mic_input.js */,
+				27CA81281C39B38D00028C5D /* sound_oscillator_frequency.js */,
 			);
 			name = Sketches;
 			path = Emerge/Sketches;
@@ -444,6 +447,7 @@
 				27CA812F1C39B7E000028C5D /* sound_mic_input.js in Resources */,
 				273849771C38874400CA627E /* basic_rect.js in Resources */,
 				27CA81271C39B05000028C5D /* 3d_textures.js in Resources */,
+				273C834B1C39FAFC00171660 /* triangle_strip.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

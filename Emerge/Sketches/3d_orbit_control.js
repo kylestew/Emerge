@@ -1,7 +1,7 @@
 // http://p5js.org/examples/examples/3D_Orbit_Control.php
 
 function setup(){
-    createCanvas(710, 400, WEBGL);
+    createCanvas(375, 375, WEBGL);
 }
 
 function draw(){

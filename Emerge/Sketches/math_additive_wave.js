@@ -14,7 +14,7 @@ var dx = new Array(maxwaves);
 var yvalues;
 
 function setup() {
-    createCanvas(640, 640);
+    createCanvas(375, 375);
     frameRate(30);
     colorMode(RGB, 255, 255, 255, 100);
     w = width + 16;

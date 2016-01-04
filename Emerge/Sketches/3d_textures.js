@@ -6,7 +6,7 @@ var vid;
 var theta = 0;
 
 function setup(){
-    createCanvas(710, 400, WEBGL);
+    createCanvas(375, 375, WEBGL);
     
     // TODO: how to URL load assets
     img = loadImage("assets/cat.jpg");

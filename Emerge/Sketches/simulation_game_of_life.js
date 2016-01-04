@@ -7,7 +7,7 @@ var board;
 var next;
 
 function setup() {
-    createCanvas(1000, 1000);
+    createCanvas(375, 375);
     w = 20;
 
     // Calculate columns and rows
