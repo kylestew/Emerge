@@ -35,6 +35,7 @@
 		27CA81291C39B38D00028C5D /* sound_oscillator_frequency.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA81281C39B38D00028C5D /* sound_oscillator_frequency.js */; };
 		27CA812D1C39B56800028C5D /* math_additive_wave.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA812C1C39B56800028C5D /* math_additive_wave.js */; };
 		27CA812F1C39B7E000028C5D /* sound_mic_input.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA812E1C39B7E000028C5D /* sound_mic_input.js */; };
+		27F815021C3C991E00FD5CB4 /* triangle_strip_advanced.js in Resources */ = {isa = PBXBuildFile; fileRef = 27F815011C3C991E00FD5CB4 /* triangle_strip_advanced.js */; };
 		B1DF07836B417AD80A3FD2F3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09FA18CFDB8FD073AD1388B /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +132,7 @@
 		27CA81281C39B38D00028C5D /* sound_oscillator_frequency.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sound_oscillator_frequency.js; sourceTree = "<group>"; };
 		27CA812C1C39B56800028C5D /* math_additive_wave.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = math_additive_wave.js; sourceTree = "<group>"; };
 		27CA812E1C39B7E000028C5D /* sound_mic_input.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sound_mic_input.js; sourceTree = "<group>"; };
+		27F815011C3C991E00FD5CB4 /* triangle_strip_advanced.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = triangle_strip_advanced.js; sourceTree = "<group>"; };
 		B09FA18CFDB8FD073AD1388B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28C152D75049D8DB3CD3F0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +259,7 @@
 				27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */,
 				27CA812C1C39B56800028C5D /* math_additive_wave.js */,
 				273C834A1C39FAFC00171660 /* triangle_strip.js */,
+				27F815011C3C991E00FD5CB4 /* triangle_strip_advanced.js */,
 				27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */,
 				27CA81241C39AF0600028C5D /* 3d_orbit_control.js */,
 				27CA81261C39B05000028C5D /* 3d_textures.js */,
@@ -446,6 +449,7 @@
 				271C59E91C38B2AC00CC6956 /* structure_recursion.js in Resources */,
 				27CA812F1C39B7E000028C5D /* sound_mic_input.js in Resources */,
 				273849771C38874400CA627E /* basic_rect.js in Resources */,
+				27F815021C3C991E00FD5CB4 /* triangle_strip_advanced.js in Resources */,
 				27CA81271C39B05000028C5D /* 3d_textures.js in Resources */,
 				273C834B1C39FAFC00171660 /* triangle_strip.js in Resources */,
 			);

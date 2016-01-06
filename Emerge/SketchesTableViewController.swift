@@ -11,6 +11,7 @@ class SketchesTableViewController: UITableViewController {
             "simulation_game_of_life",
             "math_additive_wave",
             "triangle_strip",
+            "triangle_strip_advanced",
             
             "3d_sine_cosine_in_3d",
             "3d_orbit_control",
@@ -27,16 +28,19 @@ class SketchesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // style navbar for whole app
         navigationController?.navigationBar.translucent = false
         navigationController?.navigationBar.barStyle = UIBarStyle.Black
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         // TEMP: TODO: autoroute
-//        selectSketch(sketches[0])
+        selectSketch(sketches[5])
     }
     
     override func prefersStatusBarHidden() -> Bool {
