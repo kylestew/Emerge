@@ -27,6 +27,11 @@
 		2738499A1C3897AC00CA627E /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273849991C3897AC00CA627E /* Binding.swift */; };
 		2738499C1C389F9C00CA627E /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738499B1C389F9C00CA627E /* Slider.swift */; };
 		273C834B1C39FAFC00171660 /* triangle_strip.js in Resources */ = {isa = PBXBuildFile; fileRef = 273C834A1C39FAFC00171660 /* triangle_strip.js */; };
+		2758FF661C3DA68200CEB0A4 /* simulate_flocking.js in Resources */ = {isa = PBXBuildFile; fileRef = 2758FF651C3DA68200CEB0A4 /* simulate_flocking.js */; };
+		2758FF691C3DA84300CEB0A4 /* math_noise_wave.js in Resources */ = {isa = PBXBuildFile; fileRef = 2758FF681C3DA84300CEB0A4 /* math_noise_wave.js */; };
+		2758FF6B1C3DA95700CEB0A4 /* mobile_acceleration_ball_bounce.js in Resources */ = {isa = PBXBuildFile; fileRef = 2758FF6A1C3DA95700CEB0A4 /* mobile_acceleration_ball_bounce.js */; };
+		2758FF6F1C3DABFF00CEB0A4 /* hello_p5_weather.js in Resources */ = {isa = PBXBuildFile; fileRef = 2758FF6E1C3DABFF00CEB0A4 /* hello_p5_weather.js */; };
+		2758FF711C3DADBB00CEB0A4 /* simulate_spirograph.js in Resources */ = {isa = PBXBuildFile; fileRef = 2758FF701C3DADBB00CEB0A4 /* simulate_spirograph.js */; };
 		27A3272F1C39EF4600798110 /* CodeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */; };
 		27CA81211C39ADD900028C5D /* simulation_game_of_life.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */; };
 		27CA81231C39AE6800028C5D /* 3d_sine_cosine_in_3d.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */; };
@@ -124,6 +129,11 @@
 		273849991C3897AC00CA627E /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		2738499B1C389F9C00CA627E /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		273C834A1C39FAFC00171660 /* triangle_strip.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = triangle_strip.js; sourceTree = "<group>"; };
+		2758FF651C3DA68200CEB0A4 /* simulate_flocking.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = simulate_flocking.js; sourceTree = "<group>"; };
+		2758FF681C3DA84300CEB0A4 /* math_noise_wave.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = math_noise_wave.js; sourceTree = "<group>"; };
+		2758FF6A1C3DA95700CEB0A4 /* mobile_acceleration_ball_bounce.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mobile_acceleration_ball_bounce.js; sourceTree = "<group>"; };
+		2758FF6E1C3DABFF00CEB0A4 /* hello_p5_weather.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hello_p5_weather.js; sourceTree = "<group>"; };
+		2758FF701C3DADBB00CEB0A4 /* simulate_spirograph.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = simulate_spirograph.js; sourceTree = "<group>"; };
 		27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeEditorViewController.swift; sourceTree = "<group>"; };
 		27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = simulation_game_of_life.js; sourceTree = "<group>"; };
 		27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 3d_sine_cosine_in_3d.js; sourceTree = "<group>"; };
@@ -265,6 +275,11 @@
 				27CA81261C39B05000028C5D /* 3d_textures.js */,
 				27CA812E1C39B7E000028C5D /* sound_mic_input.js */,
 				27CA81281C39B38D00028C5D /* sound_oscillator_frequency.js */,
+				2758FF651C3DA68200CEB0A4 /* simulate_flocking.js */,
+				2758FF701C3DADBB00CEB0A4 /* simulate_spirograph.js */,
+				2758FF681C3DA84300CEB0A4 /* math_noise_wave.js */,
+				2758FF6A1C3DA95700CEB0A4 /* mobile_acceleration_ball_bounce.js */,
+				2758FF6E1C3DABFF00CEB0A4 /* hello_p5_weather.js */,
 			);
 			name = Sketches;
 			path = Emerge/Sketches;
@@ -441,15 +456,20 @@
 				2738496E1C38862000CA627E /* Main.storyboard in Resources */,
 				2738494A1C3885D400CA627E /* LaunchScreen.storyboard in Resources */,
 				27CA812D1C39B56800028C5D /* math_additive_wave.js in Resources */,
+				2758FF661C3DA68200CEB0A4 /* simulate_flocking.js in Resources */,
 				27CA81211C39ADD900028C5D /* simulation_game_of_life.js in Resources */,
 				27CA81291C39B38D00028C5D /* sound_oscillator_frequency.js in Resources */,
+				2758FF6B1C3DA95700CEB0A4 /* mobile_acceleration_ball_bounce.js in Resources */,
+				2758FF691C3DA84300CEB0A4 /* math_noise_wave.js in Resources */,
 				273849471C3885D400CA627E /* Assets.xcassets in Resources */,
+				2758FF6F1C3DABFF00CEB0A4 /* hello_p5_weather.js in Resources */,
 				27CA81251C39AF0600028C5D /* 3d_orbit_control.js in Resources */,
 				27CA81231C39AE6800028C5D /* 3d_sine_cosine_in_3d.js in Resources */,
 				271C59E91C38B2AC00CC6956 /* structure_recursion.js in Resources */,
 				27CA812F1C39B7E000028C5D /* sound_mic_input.js in Resources */,
 				273849771C38874400CA627E /* basic_rect.js in Resources */,
 				27F815021C3C991E00FD5CB4 /* triangle_strip_advanced.js in Resources */,
+				2758FF711C3DADBB00CEB0A4 /* simulate_spirograph.js in Resources */,
 				27CA81271C39B05000028C5D /* 3d_textures.js in Resources */,
 				273C834B1C39FAFC00171660 /* triangle_strip.js in Resources */,
 			);

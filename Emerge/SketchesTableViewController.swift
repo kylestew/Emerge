@@ -8,7 +8,10 @@ class SketchesTableViewController: UITableViewController {
         sketches = [
             "basic_rect",
             "structure_recursion",
+            
             "simulation_game_of_life",
+            "simulate_spirograph",
+            
             "math_additive_wave",
             "triangle_strip",
             "triangle_strip_advanced",
@@ -23,6 +26,12 @@ class SketchesTableViewController: UITableViewController {
 //            "sound_mic_input",
             // TODO: how to stop audio?
 //            "sound_oscillator_frequency",
+            
+            "simulate_flocking",
+            "math_noise_wave",
+            
+            // TODO: acceleration values aren't very responsive
+//            "mobile_acceleration_ball_bounce",
             
         ]
         
