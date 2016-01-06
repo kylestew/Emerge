@@ -254,8 +254,8 @@
 		273849701C38866900CA627E /* Sketches */ = {
 			isa = PBXGroup;
 			children = (
-				271C59E81C38B2AC00CC6956 /* structure_recursion.js */,
 				273849761C38874400CA627E /* basic_rect.js */,
+				271C59E81C38B2AC00CC6956 /* structure_recursion.js */,
 				27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */,
 				27CA812C1C39B56800028C5D /* math_additive_wave.js */,
 				273C834A1C39FAFC00171660 /* triangle_strip.js */,

@@ -28,7 +28,7 @@ class SketchViewController: UIViewController, UICollectionViewDataSource, UIColl
         // no swipe-back gesture please
         self.navigationController?.interactivePopGestureRecognizer?.enabled = false
         
-        // load sketch
+        // load sketch (wait until view size is correct)
         self.title = sketch
         if let controller = p5Controller {
             if let filepath = NSBundle.mainBundle().pathForResource(sketch, ofType: "js") {

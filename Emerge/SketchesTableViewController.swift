@@ -14,11 +14,15 @@ class SketchesTableViewController: UITableViewController {
             "triangle_strip_advanced",
             
             "3d_sine_cosine_in_3d",
-            "3d_orbit_control",
+            // TODO: controls don't work
+//            "3d_orbit_control",
+            // TODO: texture asset loading
 //            "3d_textures",
             
+            // TODO: mic input doesn't work
 //            "sound_mic_input",
-            "sound_oscillator_frequency",
+            // TODO: how to stop audio?
+//            "sound_oscillator_frequency",
             
         ]
         
@@ -40,7 +44,7 @@ class SketchesTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         // TEMP: TODO: autoroute
-        selectSketch(sketches[5])
+//        selectSketch(sketches[0])
     }
     
     override func prefersStatusBarHidden() -> Bool {

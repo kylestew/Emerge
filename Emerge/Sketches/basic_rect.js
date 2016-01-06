@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(100, 100);
+    createCanvas (100, 100);
     
     // pass initial prop values to iOS
     registerProp({

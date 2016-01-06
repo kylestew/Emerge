@@ -1,8 +1,7 @@
 // http://p5js.org/examples/examples/Structure_Recursion.php
 
 function setup() {
-    // TODO: figure out how to inject size here
-    createCanvas(375, 375);
+    createCanvas(100, 100);
     noStroke();
 //    noLoop();
     
