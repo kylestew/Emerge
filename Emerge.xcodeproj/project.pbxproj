@@ -33,6 +33,7 @@
 		2758FF6F1C3DABFF00CEB0A4 /* hello_p5_weather.js in Resources */ = {isa = PBXBuildFile; fileRef = 2758FF6E1C3DABFF00CEB0A4 /* hello_p5_weather.js */; };
 		2758FF711C3DADBB00CEB0A4 /* simulate_spirograph.js in Resources */ = {isa = PBXBuildFile; fileRef = 2758FF701C3DADBB00CEB0A4 /* simulate_spirograph.js */; };
 		27A3272F1C39EF4600798110 /* CodeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */; };
+		27C665EC1C49650900C6B6EC /* custom_wave_rider.js in Resources */ = {isa = PBXBuildFile; fileRef = 27C665EB1C49650900C6B6EC /* custom_wave_rider.js */; };
 		27CA81211C39ADD900028C5D /* simulation_game_of_life.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */; };
 		27CA81231C39AE6800028C5D /* 3d_sine_cosine_in_3d.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */; };
 		27CA81251C39AF0600028C5D /* 3d_orbit_control.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA81241C39AF0600028C5D /* 3d_orbit_control.js */; };
@@ -135,6 +136,8 @@
 		2758FF6E1C3DABFF00CEB0A4 /* hello_p5_weather.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hello_p5_weather.js; sourceTree = "<group>"; };
 		2758FF701C3DADBB00CEB0A4 /* simulate_spirograph.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = simulate_spirograph.js; sourceTree = "<group>"; };
 		27A3272E1C39EF4600798110 /* CodeEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeEditorViewController.swift; sourceTree = "<group>"; };
+		27C665EB1C49650900C6B6EC /* custom_wave_rider.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = custom_wave_rider.js; sourceTree = "<group>"; };
+		27C665EE1C496D5C00C6B6EC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		27CA811F1C39ACC900028C5D /* simulation_game_of_life.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = simulation_game_of_life.js; sourceTree = "<group>"; };
 		27CA81221C39AE6800028C5D /* 3d_sine_cosine_in_3d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 3d_sine_cosine_in_3d.js; sourceTree = "<group>"; };
 		27CA81241C39AF0600028C5D /* 3d_orbit_control.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 3d_orbit_control.js; sourceTree = "<group>"; };
@@ -239,6 +242,7 @@
 				273849481C3885D400CA627E /* LaunchScreen.storyboard */,
 				273849461C3885D400CA627E /* Assets.xcassets */,
 				2738494B1C3885D400CA627E /* Info.plist */,
+				27C665EE1C496D5C00C6B6EC /* MyPlayground.playground */,
 			);
 			path = Emerge;
 			sourceTree = "<group>";
@@ -280,6 +284,7 @@
 				2758FF681C3DA84300CEB0A4 /* math_noise_wave.js */,
 				2758FF6A1C3DA95700CEB0A4 /* mobile_acceleration_ball_bounce.js */,
 				2758FF6E1C3DABFF00CEB0A4 /* hello_p5_weather.js */,
+				27C665EB1C49650900C6B6EC /* custom_wave_rider.js */,
 			);
 			name = Sketches;
 			path = Emerge/Sketches;
@@ -466,6 +471,7 @@
 				27CA81251C39AF0600028C5D /* 3d_orbit_control.js in Resources */,
 				27CA81231C39AE6800028C5D /* 3d_sine_cosine_in_3d.js in Resources */,
 				271C59E91C38B2AC00CC6956 /* structure_recursion.js in Resources */,
+				27C665EC1C49650900C6B6EC /* custom_wave_rider.js in Resources */,
 				27CA812F1C39B7E000028C5D /* sound_mic_input.js in Resources */,
 				273849771C38874400CA627E /* basic_rect.js in Resources */,
 				27F815021C3C991E00FD5CB4 /* triangle_strip_advanced.js in Resources */,
