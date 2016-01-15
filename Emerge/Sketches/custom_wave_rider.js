@@ -2,24 +2,74 @@
 function setup() {
     // pass initial prop values to iOS
     registerProp({
-                 type: "slider",
-                 key: "scale",
-                 title: "Scale",
-                 value: 0.25,
+                 type: PropTypeEnum.SLIDER,
+                 key: "amplitude",
+                 title: "amplitude",
+                 value: 0.5,
                  minValue: 0,
                  maxValue: 1
                  });
-    
-//        gui.addItem(VECGUISlider(owner: self, keyPath: "amplitude", title: "amplitude", min: 0.0, max: 1.0))
-//        gui.addItem(VECGUISlider(owner: self, keyPath: "period", title: "period", min: 0.0, max: 24.0))
-//        gui.addItem(VECGUISlider(owner: self, keyPath: "offset", title: "offset", min: 0.06, max: 2.0))
-//        gui.addItem(VECGUISlider(owner: self, keyPath: "weight", title: "weight", min: 0.1, max: 20.0))
+    registerProp({
+                 type: PropTypeEnum.SLIDER,
+                 key: "period",
+                 title: "period",
+                 value: 1.0,
+                 minValue: 0,
+                 maxValue: 24.0
+                 });
+    registerProp({
+                 type: PropTypeEnum.SLIDER,
+                 key: "offset",
+                 title: "offset",
+                 value: 0.5,
+                 minValue: 0.06,
+                 maxValue: 2.0
+                 });
+    registerProp({
+                 type: PropTypeEnum.SLIDER,
+                 key: "weight",
+                 title: "weight",
+                 value: 4.0,
+                 minValue: 0.1,
+                 maxValue: 20.0
+                 });
+    registerProp({
+                 type: PropTypeEnum.SLIDER,
+                 key: "rotate",
+                 title: "rotate",
+                 value: 0.0,
+                 minValue: 0,
+                 maxValue: 180
+                 });
 }
 
 function draw() {
-    background(127);
+    background(0);
+    stroke(255);
     
-    noStroke();
+    var centerX = width/2.0;
+    var centerY = height / 2.0;
+    var scale = height / 4;
+    var start = -3.0 * (width / height); // account for angled view
+    var precision = 0.01;
     
-    rect(0, 0, 0.5*width, 0.5*height);
+    push();
+    translate(width/2.0, width/2.0);
+    rotate(radians(props.rotate));
+    translate(-width/2.0, -width/2.0);
+    
+    
+    noFill();
+    strokeWeight(props.weight);
+    for (var yOff = start * 2; yOff < abs(start * 2); yOff += props.offset) {
+        beginShape();
+        for (var x = start; x < abs(start); x += precision) {
+            var y = props.amplitude * sin(props.period*x);
+            var posX = x * scale + centerX;
+            var posY = (-y + yOff) * scale + centerY;
+            vertex(posX, posY);
+        }
+        endShape();
+    }
+    pop();
 }
