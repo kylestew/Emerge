@@ -41,6 +41,8 @@
 		27CA81291C39B38D00028C5D /* sound_oscillator_frequency.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA81281C39B38D00028C5D /* sound_oscillator_frequency.js */; };
 		27CA812D1C39B56800028C5D /* math_additive_wave.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA812C1C39B56800028C5D /* math_additive_wave.js */; };
 		27CA812F1C39B7E000028C5D /* sound_mic_input.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CA812E1C39B7E000028C5D /* sound_mic_input.js */; };
+		27CF36401C49ABA600FEEC42 /* p5art_bezier_demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CF363F1C49ABA600FEEC42 /* p5art_bezier_demo.js */; };
+		27CF36431C49B01A00FEEC42 /* custom_tail_collapse.js in Resources */ = {isa = PBXBuildFile; fileRef = 27CF36421C49B01A00FEEC42 /* custom_tail_collapse.js */; };
 		27F815021C3C991E00FD5CB4 /* triangle_strip_advanced.js in Resources */ = {isa = PBXBuildFile; fileRef = 27F815011C3C991E00FD5CB4 /* triangle_strip_advanced.js */; };
 		B1DF07836B417AD80A3FD2F3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09FA18CFDB8FD073AD1388B /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -145,6 +147,8 @@
 		27CA81281C39B38D00028C5D /* sound_oscillator_frequency.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sound_oscillator_frequency.js; sourceTree = "<group>"; };
 		27CA812C1C39B56800028C5D /* math_additive_wave.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = math_additive_wave.js; sourceTree = "<group>"; };
 		27CA812E1C39B7E000028C5D /* sound_mic_input.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sound_mic_input.js; sourceTree = "<group>"; };
+		27CF363F1C49ABA600FEEC42 /* p5art_bezier_demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = p5art_bezier_demo.js; sourceTree = "<group>"; };
+		27CF36421C49B01A00FEEC42 /* custom_tail_collapse.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = custom_tail_collapse.js; sourceTree = "<group>"; };
 		27F815011C3C991E00FD5CB4 /* triangle_strip_advanced.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = triangle_strip_advanced.js; sourceTree = "<group>"; };
 		B09FA18CFDB8FD073AD1388B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28C152D75049D8DB3CD3F0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 				2758FF6A1C3DA95700CEB0A4 /* mobile_acceleration_ball_bounce.js */,
 				2758FF6E1C3DABFF00CEB0A4 /* hello_p5_weather.js */,
 				27C665EB1C49650900C6B6EC /* custom_wave_rider.js */,
+				27CF363F1C49ABA600FEEC42 /* p5art_bezier_demo.js */,
+				27CF36421C49B01A00FEEC42 /* custom_tail_collapse.js */,
 			);
 			name = Sketches;
 			path = Emerge/Sketches;
@@ -465,12 +471,14 @@
 				27CA81211C39ADD900028C5D /* simulation_game_of_life.js in Resources */,
 				27CA81291C39B38D00028C5D /* sound_oscillator_frequency.js in Resources */,
 				2758FF6B1C3DA95700CEB0A4 /* mobile_acceleration_ball_bounce.js in Resources */,
+				27CF36401C49ABA600FEEC42 /* p5art_bezier_demo.js in Resources */,
 				2758FF691C3DA84300CEB0A4 /* math_noise_wave.js in Resources */,
 				273849471C3885D400CA627E /* Assets.xcassets in Resources */,
 				2758FF6F1C3DABFF00CEB0A4 /* hello_p5_weather.js in Resources */,
 				27CA81251C39AF0600028C5D /* 3d_orbit_control.js in Resources */,
 				27CA81231C39AE6800028C5D /* 3d_sine_cosine_in_3d.js in Resources */,
 				271C59E91C38B2AC00CC6956 /* structure_recursion.js in Resources */,
+				27CF36431C49B01A00FEEC42 /* custom_tail_collapse.js in Resources */,
 				27C665EC1C49650900C6B6EC /* custom_wave_rider.js in Resources */,
 				27CA812F1C39B7E000028C5D /* sound_mic_input.js in Resources */,
 				273849771C38874400CA627E /* basic_rect.js in Resources */,

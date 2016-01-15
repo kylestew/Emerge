@@ -8,6 +8,8 @@ class SketchesTableViewController: UITableViewController {
         sketches = [
             
             "custom_wave_rider",
+            "custom_tail_collapse",
+            "p5art_bezier_demo",
             
             "basic_rect",
             "structure_recursion",
@@ -56,7 +58,7 @@ class SketchesTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         // TEMP: TODO: autoroute
-//        selectSketch(sketches[0])
+//        selectSketch(sketches[1])
     }
     
     override func prefersStatusBarHidden() -> Bool {
